@@ -11,7 +11,7 @@ metadata = db.MetaData()
 Student = db.Table('StudentData', metadata,
               db.Column('studentId', db.Integer()),
               db.Column('name', db.String(255), nullable=False),
-              db.Column('yearlvl', db.String(5),nullable=False),
+              db.Column('yearlvl', db.String(4),nullable=False),
               db.Column('password', db.String(255), default=True)
               )
 
