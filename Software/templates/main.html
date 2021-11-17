@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="../static/main-style.css">
+    </head>
+    <body>
+        <section class="header">
+            <!---Navbar-->
+            <div class="menu-nav">
+                <a href="{{ url_for('page') }}" class="disabled">Home</a>
+                <a href="#">About</a>
+                <a href="{{ url_for('log') }}">Logout</a>
+            </div>
+            <!--Skills-->
+            <div class="skill">
+                <h1>Welcome to the <br> Student Evaluation</h1>
+                <p>Select your skill</p>
+                <a href="" class="choose">Soft skill</a>
+                <a href="{{ url_for('hard') }}" class="choose">Hard skill</a>
+            </div>
+        </section>
+    </body>
+</html>

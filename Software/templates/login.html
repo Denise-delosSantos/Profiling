@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Login</title>
+		<link rel="stylesheet" href="../static/login-style.css">
+	</head>
+	<body>
+		<form action="/student" method="POST">
+			<div class="form">
+				<h1>Login</h1>
+				<input
+					placeholder="Email Address"
+					type="text"
+					name="user"
+					value="{{ user }}">
+				<input
+					placeholder="Password"
+					type="password"
+					name="password"
+					value="{{ password }}">
+				<span>Don't have account? <a href="{{ url_for('reg') }}">Signup Now</a></span>
+				<a href= "{{ url_for('page') }}">
+					<button type="button">LOGIN</button>
+				</a>
+			</div>
+		</form>
+	</body>
+</html>

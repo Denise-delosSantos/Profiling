@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #379683;
+}
+
+.menu-nav {
+    display: flex;
+	overflow: hidden;
+	background-color: #edf5e1;
+	line-height: 40px;
+}
+ 
+.menu-nav a {
+	width:120px;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 16px;
+	color:#05386b;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ 
+.menu-nav a:hover {
+	background-color: #05386b;
+	color: #edf5e1;
+    transition: 1s;
+}
+
+.disabled {
+    color: currentColor;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.skill {
+    width: 90%;
+    color: #edf5e1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.skill h1 {
+    font-size: 62px;
+}
+
+.skill p {
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: #edf5e1;
+}
+
+.choose {
+    display: inline-block;
+    text-decoration: none;
+    color: #edf5e1;
+    border: 1px solid #edf5e1;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.choose:hover {
+    border: 1px solid #05386b;
+    background: #05386b;
+    transition: 1s;
+}
+
+@media(max-width: 700px) {
+    .skill h1{
+        font-size: 55px;
+    }
+    .skill p{
+        font-size: 30px;
+    }
+}
