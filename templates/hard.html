@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+        <title>Hard Skill</title>
+        <link rel="stylesheet" href="../static/hard-style.css">
+    </head>
+    <body>
+        <!--Title Page-->
+        <section class="header">
+            <!---Navbar-->
+            <div class="menu-nav">
+                <a href="{{ url_for('page') }}">Home</a>
+                <a href="#">About</a>
+                <a href="{{ url_for('log') }}">Logout</a>
+            </div>
+            <!---Title-->
+            <h1>Course List</h1>
+            <p>Select your preferred course to answer</p>
+        </section>
+        <!--Course list-->
+        <section class="course-list">
+            <div class="course">
+                <div class="card">
+                    <a href="{{ url_for('test') }}">
+                        <img src="../static/images/software.png" alt="software-design">
+                        <h3>CPE 025 <br> Software Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia dolorum rem dolore maiores 
+                            molestias itaque velit tenetur ipsa in? Iusto autem, eaque dolor assumenda magni explicabo est 
+                            iste harum!</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="{{ url_for('test') }}">
+                        <img src="../static/images/signal.jpg" alt="signals">
+                        <h3>CPE 027 <br> Digital Signal Processing and Application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia dolorum rem dolore maiores 
+                            molestias itaque velit tenetur ipsa in? Iusto autem, eaque dolor assumenda magni explicabo est 
+                            iste harum!</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="{{ url_for('test') }}">
+                        <img src="../static/images/tech.jpg" alt="tech">
+                        <h3>CPE 006 <br> Microprocessor System</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia dolorum rem dolore maiores 
+                            molestias itaque velit tenetur ipsa in? Iusto autem, eaque dolor assumenda magni explicabo est 
+                            iste harum!</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

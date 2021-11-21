@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+        <title>Test</title>
+        <link rel="stylesheet" href="../static/test-style.css">
+    </head>
+    <body>
+        <!--Title Page-->
+        <section class="header">
+            <!---Navbar-->
+            <div class="menu-nav">
+                <a href="{{ url_for('page') }}">Home</a>
+                <a href="#">About</a>
+                <a href="{{ url_for('log') }}">Logout</a>
+            </div>
+        </section>
+        <section class="question">
+            <div class="card">
+                <h1>Question</h1>
+                <p>What is ...?</p>
+                <!-- Radio Button -->
+                <ul>
+                    <li>
+                        <input
+                            type="radio"
+                            name="option"
+                            id="one"/>
+                        <label for="one">Choose A</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            name="option"
+                            id="two"/>
+                        <label for="two">Choose B</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            name="option"
+                            id="three"/>
+                        <label for="three">Choose C</label>
+                    </li>
+                </ul>
+                <a href="">
+                    <button type="submit">NEXT</button>
+                </a>
+            </div>
+        </section>
+    </body>
+</html>

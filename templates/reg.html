@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+		<title>Registration</title>
+		<link rel="stylesheet" href="../static/reg-style.css">
+	</head>
+	<body>
+		<form action="/reg" method="POST"> 
+			<div class="form">
+				<h1>Registration</h1>
+				<input 
+					placeholder="Student ID" 
+					type="number" 
+					name="id"
+					value="{{ id }}">
+				<input 
+					placeholder="Name" 
+					type="text"
+					name="name"
+					value="{{ name }}">
+				<select name="year">
+					<option value="">Select your year level</option>
+					<option value="one">1st Year</option>
+					<option value="two">2nd Year</option>
+					<option value="three">3rd Year</option>
+					<option value="four">4th Year</option>
+					<option value="five">5th Year</option>
+				</select>
+				<input 
+					placeholder="Password" 
+					type="password"
+					name="password"
+					value="{{ password }}">
+				<a href="login.html">
+					<button type="submit">SIGNUP</button>
+				</a>
+			</div>
+		</form>
+	</body>
+</html>
